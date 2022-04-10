@@ -61,6 +61,10 @@ import { logHandler } from "./utils/logHandler";
     }
   });
 
+  app.get("/uptime", (_, res) => {
+    res.send("Hello!");
+  });
+
   const httpServer = http.createServer(app);
 
   httpServer.listen(5080, () => {
