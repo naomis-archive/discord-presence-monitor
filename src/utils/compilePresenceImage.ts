@@ -34,7 +34,7 @@ export const compilePresenceImage = async (
     const html = `
 <div id="container" style="background-color:#3a3240;color:#aea8d3;width:600px;border-radius:10px;padding:10px;">
     <div style="display:grid;grid-template-columns: 150px auto;">
-        <img src="https://cdn.nhcarrigan.com/profile-transparent.png" width="120px" style="border-radius:50%;border:5px solid ${colours[state]};" />
+        <img src="https://cdn.nhcarrigan.com/profile.png" width="120px" style="border-radius:50%;border:5px solid ${colours[state]};" />
         <div>
             <p style="font-weight:bold;font-family:Helvetica;font-size:20px">Naomi</p>
             <p style="font-family:Helvetica">Is currently <span style="font-style:italic">offline</span>
@@ -54,7 +54,7 @@ export const compilePresenceImage = async (
     const html = `
 <div id="container" style="background-color:#3a3240;color:#aea8d3;width:600px;border-radius:10px;padding:10px;">
 	<div style="display:grid;grid-template-columns: 150px auto;">
-		<img src="https://cdn.nhcarrigan.com/profile-transparent.png" width="120px" style="border-radius:50%;border:5px solid ${colours[state]};" />
+		<img src="https://cdn.nhcarrigan.com/profile.png" width="120px" style="border-radius:50%;border:5px solid ${colours[state]};" />
 		<div>
 			<p style="font-weight:bold;font-family:Helvetica;font-size:20px">Naomi</p>
 			<p style="font-family:Helvetica">Is currently <span style="font-style:italic">online</span>
@@ -108,7 +108,7 @@ export const compilePresenceImage = async (
 
 <div id="container" style="background-color:#3a3240;color:#aea8d3;width:600px;border-radius:10px;padding:10px;">
   <div style="display:grid;grid-template-columns: 150px auto;">
-      <img src="https://cdn.nhcarrigan.com/profile-transparent.png" width="120px" style="border-radius:50%;border:5px solid ${
+      <img src="https://cdn.nhcarrigan.com/profile.png" width="120px" style="border-radius:50%;border:5px solid ${
         colours[state]
       };" />
       <div>
