@@ -73,15 +73,15 @@ import { logHandler } from "./utils/logHandler";
 
   if (process.env.NODE_ENV === "production") {
     const privateKey = await readFile(
-      "/etc/letsencrypt/live/rpc.nhcarrigan.com/privkey.pem",
+      "/etc/letsencrypt/live/rpc.naomi.lgbt/privkey.pem",
       "utf8"
     );
     const certificate = await readFile(
-      "/etc/letsencrypt/live/rpc.nhcarrigan.com/cert.pem",
+      "/etc/letsencrypt/live/rpc.naomi.lgbt/cert.pem",
       "utf8"
     );
     const ca = await readFile(
-      "/etc/letsencrypt/live/rpc.nhcarrigan.com/chain.pem",
+      "/etc/letsencrypt/live/rpc.naomi.lgbt/chain.pem",
       "utf8"
     );
 
