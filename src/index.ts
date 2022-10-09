@@ -4,7 +4,7 @@ import https from "https";
 import { join } from "path";
 
 import cors from "cors";
-import { Client } from "discord.js";
+import { ActivityType, Client, GatewayIntentBits } from "discord.js";
 import express from "express";
 
 import { Cache } from "./interfaces/Cache";
@@ -16,11 +16,13 @@ import { logHandler } from "./utils/logHandler";
   const cache: Cache = { large: "", small: "" };
 
   /* Bot Code */
-  const bot = new Client({ intents: ["GUILDS", "GUILD_PRESENCES"] });
+  const bot = new Client({
+    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildPresences],
+  });
 
   bot.on("ready", () => {
     logHandler.log("debug", "Discord bot connected!");
-    bot.user?.setActivity("Naomi's presence.", { type: "WATCHING" });
+    bot.user?.setActivity("Naomi's presence.", { type: ActivityType.Watching });
   });
 
   await bot.login(process.env.BOT_TOKEN);
