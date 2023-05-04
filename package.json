@@ -44,8 +44,8 @@
     "typescript": "5.0.4"
   },
   "dependencies": {
-    "@sentry/integrations": "7.50.0",
-    "@sentry/node": "7.50.0",
+    "@sentry/integrations": "7.51.0",
+    "@sentry/node": "7.51.0",
     "cors": "2.8.5",
     "discord.js": "14.10.2",
     "dotenv": "16.0.3",
